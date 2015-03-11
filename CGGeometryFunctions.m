@@ -90,6 +90,6 @@ bool CGSizeEqualToSizeWithDelta (const CGSize size1, const CGSize size2, const C
 	return YES;
 }
 
-void CGSizeSwap(CGSize *sizeRef) {
+void CGSizeSwapRef(CGSize *sizeRef) {
 	SWAP(sizeRef->height, sizeRef->width);
 }
