@@ -18,28 +18,44 @@
 	[self setValue:obj forKey:key];
 }
 
-- (void)setInputImage:(CIImage *)img {
+- (void)setZInputImage:(CIImage *)img {
 	[self setValue:img forKey:kCIInputImageKey];
 }
 
-- (CIImage *)inputImage {
+- (CIImage *)zInputImage {
 	return [self valueForKey:kCIInputImageKey];
 }
 
-- (void)setOutputImage:(CIImage *)img {
+- (void)setZOutputImage:(CIImage *)img {
 	[self setValue:img forKey:kCIOutputImageKey];
 }
 
-- (CIImage *)outputImage {
+- (CIImage *)zOutputImage {
 	return [self valueForKey:kCIOutputImageKey];
 }
 
-- (void)setBackgroundImage:(CIImage *)img {
+- (void)setZBackgroundImage:(CIImage *)img {
 	[self setValue:img forKey:kCIInputBackgroundImageKey];
 }
 
-- (CIImage *)backgroundImage {
+- (CIImage *)zBackgroundImage {
 	return [self valueForKey:kCIInputBackgroundImageKey];
+}
+
+- (float)zInputTime {
+	return [[self valueForKey:kCIInputTimeKey] floatValue];
+}
+
+- (void)setZInputTime:(float)time {
+	[self setValue:@(time) forKey:kCIInputTimeKey];
+}
+
+- (CIImage *)zInputTargetImage {
+	return [self valueForKey:kCIInputTargetImageKey];
+}
+
+- (void)setZInputTargetImage:(CIImage *)img {
+	[self setValue:img forKey:kCIInputTargetImageKey];
 }
 
 //TODO: add these
