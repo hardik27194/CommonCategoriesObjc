@@ -19,5 +19,6 @@ CGRect CGRectMinusInsets(CGRect rect, UIEdgeInsets insets);
 CGRect CGRectPlusInsets(CGRect rect, UIEdgeInsets insets);
 bool CGRectEqualToRectWithDeltaRef (const CGRect *const rect1, const CGRect *const rect2, const CGFloat delta);
 bool CGSizeEqualToSizeWithDelta (const CGSize size1, const CGSize size2, const CGFloat delta);
+void CGSizeSwapRef(CGSize *sizeRef);
 
 #endif /* __CGGeometryFunctions__ */
